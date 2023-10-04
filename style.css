@@ -1,3 +1,7 @@
+body{
+    padding: 0;
+}
+
 .header{
     background-color: #1F2937;
     color: white;
@@ -6,20 +10,45 @@
     padding: 0 5em 0 5em;
 }
 
+.there{
+    display: flex;
+}
 
 .headerlogo {
     font-size: 24px;
     font-weight: bold;
 }
 
+.headerlinks{
+    margin-left: auto;
+}
+
 ul{
     list-style-type: none;
     display: flex;
-    margin-left: auto;
     font-size: 18px;
-    gap: 20px;
+    gap: 20px;  
+}
 
-    
+.block{
+    display: block;
+}
+
+ul.cards{
+    list-style-type: none;
+    display: flex;
+    font-size: 18px;
+    gap: 20px;  
+    justify-content: center; 
+}
+
+
+li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
 }
 
 a{
@@ -39,7 +68,8 @@ h1{
     background-color: #1F2937;
     color:#f9faf8;
     padding: 0 5em 5em 5em;
-    
+    gap:50px;
+    justify-content: center;
 }
 
 .partone.left{
@@ -48,7 +78,14 @@ h1{
 }
 
 .placeholder{
+
+    display: flex;
     background-color: #cbcdd1;
+    height: 200px;
+    width: 400px;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 .parttwo{
@@ -65,19 +102,23 @@ h1{
     height: 200px;
     border: 5px solid #3882f6;
     border-radius: 15px;
+    text-align: center;
+    justify-content: inherit;
+    display: flex;
 }
 
 h2{
     font-size: 36px;
     font-weight: bolder;
+    color: #1F2937;
 }
 
 .partthree {
     background-color: #e5e7eb;
     color: #1F2937;
-    font-style: italic;
     font-size: 36px;
     padding: 2em 5em 2em 5em;
+    justify-content: center;
     }
 
 #thor{
@@ -86,29 +127,61 @@ h2{
     font-size: ;
 }
 
+#quote {
+    font-style: italic;
+}
+
 .partfour{
-    padding: 5em;
+    padding: 3em;
+    display: flex;
+    
+    flex-direction: column;
+}
+
+.container{
+    background-color: #3882f6;
+    border-radius: 15px;
+    padding: 3em;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.call{
+    font-weight: bolder;
+    font-size: 30px;
 }
 
 .action{
-    background-color: #3882f6;
-    border-radius: 15px;
-    padding: 2em;
+    font-size: 20px;
 }
+
 
 footer{
     background-color: #1F2937;
     font-size: 18px;
     text-align: center;
     color: #f9faf8;
-    padding: 1em;
+    padding: 2em;
 }
 
 .signup{
     font-size: 18px;
     padding: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
     color: #f9faf8;
     background-color: #3882f6;
     border: none;
     border-radius: 5px;
-    }
+}
+
+.signup.two{
+    display: flex;
+    border: 2px solid #f9faf8;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: 2em;
+}
+    
